@@ -25,9 +25,9 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 ![LogoLite](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/Librer%C3%ADa%20Palas%20lite.png)
 
 
-## Color Reference
+## Colores de referencia
 
-| Color             | Hex                                                                |
+| Colores             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Slate gray | ![#748386](https://via.placeholder.com/10/748386?text=+) #748386 |
 | Jasper | ![#DD614A](https://via.placeholder.com/10/DD614A?text=+) #DD614A |
