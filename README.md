@@ -19,6 +19,8 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
+## Logos
+
 ![Logo](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/Librer%C3%ADa%20Palas.png)
 ![LogoLite](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/Librer%C3%ADa%20Palas%20lite.png)
 
@@ -27,10 +29,11 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Slate gray | ![#748386](https://via.placeholder.com/10/748386?text=+) #748386 |
+| Jasper | ![#DD614A](https://via.placeholder.com/10/DD614A?text=+) #DD614A |
+| Night | ![#141115](https://via.placeholder.com/10/141115?text=+) #141115 |
+| Eggplant | ![#4C2B36](https://via.placeholder.com/10/4C2B36?text=+) #4C2B36 |
+| Coral | ![#F48668](https://via.placeholder.com/10/F48668?text=+) #F48668 |
 
 
 ## Appendix
