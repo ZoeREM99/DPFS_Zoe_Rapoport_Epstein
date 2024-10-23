@@ -7,11 +7,11 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 
 ## Referentes
 
--[Cúspide](https://cuspide.com/)
--[Yenny - El Ateneo](https://www.yenny-elateneo.com/)
--[Librería Santa Fe](https://www.lsf.com.ar/)
--[Librería Norte](https://www.librerianorte.com.ar/)
--[SBS Librerías](https://www.sbs.com.ar/)
+- [Cúspide](https://cuspide.com/)
+- [Yenny - El Ateneo](https://www.yenny-elateneo.com/)
+- [Librería Santa Fe](https://www.lsf.com.ar/)
+- [Librería Norte](https://www.librerianorte.com.ar/)
+- [SBS Librerías](https://www.sbs.com.ar/)
 
 
 ## Wireframes
