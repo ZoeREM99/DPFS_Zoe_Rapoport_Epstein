@@ -34,9 +34,3 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 | Night | ![#141115](https://via.placeholder.com/10/141115?text=+) #141115 |
 | Eggplant | ![#4C2B36](https://via.placeholder.com/10/4C2B36?text=+) #4C2B36 |
 | Coral | ![#F48668](https://via.placeholder.com/10/F48668?text=+) #F48668 |
-
-
-## Appendix
-
-Any additional information goes here
-
