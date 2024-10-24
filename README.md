@@ -16,7 +16,7 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 
 ## Wireframes
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/wireframes/landingPage.jpg)
 
 
 ## Logos
