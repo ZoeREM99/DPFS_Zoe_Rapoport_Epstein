@@ -21,8 +21,8 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 
 ## Logos
 
-![Logo](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/Librer%C3%ADa%20Palas.png)
-![LogoLite](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/Librer%C3%ADa%20Palas%20lite.png)
+![Logo](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/LibreriaPalas.png)
+![LogoRedondo](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/design/libreriaPalasRedondo.png)
 
 
 ## Colores de referencia
