@@ -14,7 +14,7 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 - [SBS Librerías](https://www.sbs.com.ar/)
 
 
-## Wireframes
+## Boceto
 
 ![App Screenshot](https://github.com/ZoeREM99/DPFS_Zoe_Rapoport_Epstein/blob/main/info/wireframes/landingPage.jpg)
 
