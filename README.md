@@ -13,6 +13,9 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 - [Librería Norte](https://www.librerianorte.com.ar/)
 - [SBS Librerías](https://www.sbs.com.ar/)
 
+## Tablero de tablajo
+
+[Trello](https://trello.com/b/wWh2XNcA/dpfs)
 
 ## Boceto
 
@@ -34,3 +37,7 @@ Este proyecto simula ser una librería. La página de esta librería está desti
 | Night | ![#141115](https://via.placeholder.com/10/141115?text=+) #141115 |
 | Eggplant | ![#4C2B36](https://via.placeholder.com/10/4C2B36?text=+) #4C2B36 |
 | Coral | ![#F48668](https://via.placeholder.com/10/F48668?text=+) #F48668 |
+
+## Fuente
+
+[Nunito sans](https://fonts.google.com/specimen/Nunito+Sans)

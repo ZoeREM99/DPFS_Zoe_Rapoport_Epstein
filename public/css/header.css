@@ -1,0 +1,250 @@
+@import "variables.css";
+
+/* Menú hamburguesa */
+body{margin:0;padding:0;}
+
+/* Estilos generales */
+.hamburger {
+    display: none; /* Ocultar por defecto */
+    /* cursor: pointer; */
+}
+  
+.menuppal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Vars  */
+:root {
+  --rad: 0.5rem;
+  --dur: 0.3s;
+  --color-light: #fff;
+  --height: 3rem;
+  --btn-width: 3rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+/* Main styles */
+form {
+  position: relative;
+  /* width: 30rem; */
+  background: var(--jasper);
+  border-radius: var(--rad);
+  margin: 2rem;
+  
+}
+
+input, button {
+  height: var(--height);
+  font-family: var(--font--family);
+  border: 0;
+  color: var(--night);
+  font-size: 1rem;
+}
+
+input[type="search"] {
+   /* outline: 0; <-- shold probably remove this for better accessibility, adding for demo aesthetics for now.  */
+  width: 100%;
+  background: var(--color-light);
+  padding: 1.2rem;
+  border-radius: var(--rad);
+   appearance: none; /*//for iOS input[type="search"] roundedness issue. border-radius alone doesn't work */
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+  border-color: var(--night);
+  border-width: 1px;
+  border-style: solid;
+}
+
+button {
+   display: none; /*// prevent being able to tab to it */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--jasper);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  + button {
+    display: block;
+  }
+}
+
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* Search bar end */
+  
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+.hamburger {
+    display: block;
+}
+
+.hamburger{
+    position:fixed;
+    background-color:transparent;
+    left:0;
+    top:0;
+    height:30px;
+    width:30px;
+    padding:20px 20px;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index:1002;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+.hamburger.is-active{
+background-color:none;
+}
+
+._layer{
+    background:var(--eggplant);
+    margin-bottom:4px;
+    border-radius:2px;
+    width:28px;
+    height:4px;
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.hamburger:hover .-top{
+    -webkit-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    transform:translateY(-100%);
+}
+
+.hamburger:hover .-bottom{
+    -webkit-transform:translateY(50%);
+    -ms-transform:translateY(100%);
+    transform:translateY(100%);
+    }
+
+.hamburger.is-active .-top{
+    -webkit-transform:translateY(200%) rotate(45deg) !important;
+    -ms-transform:translateY(200%) rotate(45deg) !important;
+    transform:translateY(200%) rotate(45deg) !important;
+}
+
+.hamburger.is-active .-mid{
+    opacity:0;
+}
+
+.hamburger.is-active .-bottom{
+    -webkit-transform:translateY(-200%) rotate(135deg) !important;
+    -ms-transform:translateY(-200%) rotate(135deg) !important;
+    transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.menuppal{
+    background-color: rgba(255, 255, 255, 0.80);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    /* overflow-y: scroll; */
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 80%;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+    padding-top: 50px;
+}
+
+.menuppal ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuppal ul li { 
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* text-align:center; */
+    font-family: var(--font--family);
+    font-size: 1.2em;
+    /* line-height: 3em; */
+    /* height: 3em; */
+    /* text-transform:none; */
+    font-weight:bold;
+    margin-top: 2rem;
+}
+
+/* Underline styles */
+.menuppal ul li a {
+  display: block;
+  position: relative;
+  /* padding: 0; */
+  overflow: hidden;
+  width: min-content;
+}
+
+/* Fade in */
+.menuppal ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--eggplant);
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+  
+.menuppal ul li a:hover::after,
+.menuppal ul li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+  
+.menuppal ul li a{
+text-decoration:none;
+color:var(--jasper);
+}
+
+.menuppal ul li a:hover{
+transition: all 0.2s ease-in-out;
+color:var(--eggplant);
+}
+/* Fade in end */
+}
+/* Estilos para pantallas pequeñas end */
+
+/* Menú hamburguesa end */
