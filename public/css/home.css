@@ -1,16 +1,15 @@
 @import "variables.css";
 
-.main {
+main {
     display: flex;
     justify-content: center;
-    background-color: cadetblue;
 }
 
 
 /* Carrusel principal */
 .single-item {
     max-width: 98%;
-    padding: 80px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
 } 
 
 .bannerHPimg {
