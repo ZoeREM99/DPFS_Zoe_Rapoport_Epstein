@@ -12,29 +12,37 @@
 </head>
 <body>
     <header>
-        <div class="hamburger">
-            <div class="_layer -top"></div>
-            <div class="_layer -mid"></div>
-            <div class="_layer -bottom"></div>
-        </div>
-        <nav class="menuppal">
-            <ul>
-              <li><a href="#">Catálogo</a></li>
-              <li><a href="#">Sucursales</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-            <form onsubmit="event.preventDefault();" role="search">
-                <label for="search">Search for stuff</label>
-                <input id="search" type="search" placeholder="Buscar..." autofocus required />
-                <button type="submit">Go</button>    
+        <section id="headerTop">
+            <a class="logoNav" href="/views/home.html"><img src="../public/img/logos/LibreriaPalas.png" alt="Librería Palas logo"></a>
+            <form id="searchbar" onsubmit="event.preventDefault();" role="search">
+                <label id="searchlabel" for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Buscar..."required />
+                <button id="searchbtn" type="submit">Go</button>    
             </form>
-        </nav>
+            <button type="button">Registarme</button>
+            <button type="button">Iniciar sesión</button>
+            <button type="button">Carrito</button>
+        </section>
+        <section id="headerBottom">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <nav class="menuppal">
+                <ul>
+                  <li><a href="#">Catálogo</a></li>
+                  <li><a href="#">Sucursales</a></li>
+                  <li><a href="#">Contacto</a></li>
+                </ul>   
+            </nav>
+        </section>
     </header>
     <main class="main">
         <div class="single-item">
-            <div class="bannerHP"><img class="bannerHPimg" src="../public/img/1.png" alt=""></div>
-            <div class="bannerHP"><img class="bannerHPimg" src="../public/img/2.png" alt=""></div>
-            <div class="bannerHP"><img class="bannerHPimg" src="../public/img/3.png" alt=""></div>
+            <div class="bannerHP"><img class="bannerHPimg" src="../public/img/banners/HP1B.png" alt="Harry Potter y la piedra filosofal"></div>
+            <div class="bannerHP"><img class="bannerHPimg" src="../public/img/banners/HP2B.png" alt="Harry Potter y la cámara secreta"></div>
+            <div class="bannerHP"><img class="bannerHPimg" src="../public/img/banners/HP3B.png" alt="Harry Potter y el prisionero de Azkaban"></div>
           </div>
     </main>
     <footer>
