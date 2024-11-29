@@ -38,6 +38,13 @@ header {
     background-color: var(--jasper);
 }
 
+.headerbtn:hover {
+    position: relative;
+    cursor:pointer;
+    background-color: var(--coral) !important;
+    transition: 0.3s ease-in-out;
+}
+
 #navbtnsDesktop button i {
     padding: 5px;
 }

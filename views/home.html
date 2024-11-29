@@ -23,23 +23,23 @@
             <div id="headerSearchBar">
                 <form id="searchbar" onsubmit="event.preventDefault();" role="search">
                     <label id="searchlabel" for="search">Search for stuff</label>
-                    <input id="search" type="search" placeholder="Buscar..."required />
+                    <input id="search" type="search" placeholder="Buscar..."/>
                     <button id="searchbtn" type="submit">Go</button>    
                 </form>
             </div>
             <div id="navbtnsDesktop">
-                <button type="button" class="headerbtn">
+                <button type="button" class="headerbtn signUpbtn" onclick="redirectSignUp()">
                     <i class="fa-solid fa-circle-user"></i>Registarme
                 </button>
-                <button type="button" class="headerbtn">
+                <button type="button" class="headerbtn shoppingbtn" onclick="redirectShoppingCart()">
                     <i class="fa-solid fa-cart-shopping"></i>Ver carrito
                 </button>
             </div>
             <div id="navbtns">
-                <button type="button" class="headerbtn">
+                <button type="button" class="headerbtn signUpbtn" onclick="redirectSignUp()">
                     <i class="fa-solid fa-circle-user"></i>
                 </button>
-                <button type="button" class="headerbtn">
+                <button type="button" class="headerbtn shoppingbtn" onclick="redirectShoppingCart()">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </button>
             </div>
@@ -68,5 +68,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
     <script src="../public/js/home.js"></script>
+    <script src="../public/js/header.js"></script>
 </body>
 </html>

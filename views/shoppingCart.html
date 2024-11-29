@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Palas - Carrito de Compras</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://kit.fontawesome.com/073e576f16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+</head>
+<body>
+    <header>
+        <section id="headerTop">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <a class="logoNav" href="/views/home.html"><img src="../public/img/logos/LibreriaPalas.png" alt="Librería Palas logo"></a>
+            <div id="headerSearchBar">
+                <form id="searchbar" onsubmit="event.preventDefault();" role="search">
+                    <label id="searchlabel" for="search">Search for stuff</label>
+                    <input id="search" type="search" placeholder="Buscar..."/>
+                    <button id="searchbtn" type="submit">Go</button>    
+                </form>
+            </div>
+            <div id="navbtnsDesktop">
+                <button type="button" class="headerbtn signUpbtn" onclick="redirectSignUp()">
+                    <i class="fa-solid fa-circle-user"></i>Registarme
+                </button>
+                <button type="button" class="headerbtn shoppingbtn" onclick="redirectShoppingCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>Ver carrito
+                </button>
+            </div>
+            <div id="navbtns">
+                <button type="button" class="headerbtn signUpbtn" onclick="redirectSignUp()">
+                    <i class="fa-solid fa-circle-user"></i>
+                </button>
+                <button type="button" class="headerbtn shoppingbtn" onclick="redirectShoppingCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </section>
+        <section id="headerBottom">
+            <nav class="menuppal">
+                <ul>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>   
+            </nav>
+        </section>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script src="../public/js/header.js"></script>
+</body>
+</html>
