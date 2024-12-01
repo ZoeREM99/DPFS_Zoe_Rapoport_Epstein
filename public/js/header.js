@@ -14,13 +14,3 @@ function toggleMenu (event) {
 menu.addEventListener('click', toggleMenu, false);
 
 // Hamburger menu end
-
-// Redirect events
-function redirectShoppingCart() {
-    location.href = "./shoppingCart.html";
-};
-
-function redirectSignUp() {
-    location.href = "./signUp.html";
-};
-
