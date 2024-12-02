@@ -1,19 +1,138 @@
 @import "variables.css";
 
 main {
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    font-family: var(--font--family);
 }
 
 
 /* Carrusel principal */
-.single-item {
-    max-width: 98%;
-    padding: 10px 5px 10px 5px;
+.bannerPrincipal {
+    margin: 0 5%;
+    max-width: 90%;
+    padding: 10px 5px;
 } 
+
+.bannerHP {
+    padding: 0 5px;
+}
 
 .bannerHPimg {
     max-width: 100%;
     height: auto;
 }
 /* Carrusel principal end */
+
+/* News  */
+.news {
+    margin: 40px 5% 0 5%;
+}
+
+.news h2 {
+    margin: 0;
+    padding: 40px 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--jasper);
+}
+
+.carrouserNews {
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+.cardImg {
+    display: block;
+    position: relative;
+    max-width: 150px;
+    height: auto;
+    /* z-index: 10; */
+    margin: auto;
+}
+
+.cardImg img {
+    max-width: 150px;
+    height: auto;
+}
+
+.addCart {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    z-index: 15;
+    background-color: var(--eggplant);
+    color: whitesmoke;
+    padding: 7px;
+    width: 20px;
+    height: 20px;
+    font-size: smaller;
+    border-radius: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s 0.5s ease-in-out;
+}
+
+.card:hover .addCart{
+    transform: translateY(-40px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.addCart:hover {
+    opacity: 0.5;
+}
+
+.cardBody {
+    font-size: 0.7rem;
+    padding: 0 10px;
+    margin: auto;
+    max-width: 150px;
+}
+
+.title, .author {
+    display: block;
+    margin: 0px !important;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--coral);
+}
+
+.title {
+    font-weight: 700;
+}
+
+.author {
+    font-weight: 500;
+}
+
+.cardBody a h3 {
+    margin: 0;
+    font-weight: inherit;
+}
+
+.price {
+    font-weight: 500;
+    margin: 0%;
+    padding: 10px 0;
+}
+
+.price span {
+    padding-left: 3px;
+}
+/* Card end */
+@media only screen and (max-width: 768px) {
+    .addCart {
+        top: 10px;
+        visibility: visible;
+        transition: none;
+        opacity: 1;
+    }
+}
+/* News end */

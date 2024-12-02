@@ -5,7 +5,7 @@ body{margin:0;padding:0;}
 
 /* Estilos generales */
 header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     box-sizing: border-box;
 }
   
@@ -35,6 +35,7 @@ header {
 .headerbtn {
     background-color: var(--jasper);
     color: white;
+    border-radius: 2px;
 }
 
 .headerbtn:hover {
@@ -72,7 +73,6 @@ header {
   --rad: 4em;
   --dur: 0.5s;
   --color-light: #fff;
-  /* --height: 1em; */
   --btn-width: 4rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
@@ -136,6 +136,7 @@ header {
 
 #searchbtn:active {
     background-color: var(--coral);
+    opacity: 0.5;
 }
 
 #search:not(:placeholder-shown) {
@@ -143,6 +144,8 @@ header {
   width: calc(100% - var(--btn-width));
   + button {
     display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
   }
 }
 
@@ -154,6 +157,7 @@ header {
   height: 1px;
   width: 1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #search[type="search"]::-webkit-search-cancel-button {
@@ -174,9 +178,10 @@ header {
 /* Navbar */
 .menuppal ul{
     margin:0;
-    padding:0;
+    /* padding:0; */
     display: flex;
     justify-content: flex-start;
+    padding:0.5rem 5%;
 }
 
 .menuppal ul li { 
@@ -185,19 +190,18 @@ header {
     justify-content: center;
     /* text-align:center; */
     font-family: var(--font--family);
-    font-size: 1.2em;
+    font-size: 1.1em;
     /* line-height: 3em; */
     /* height: 3em; */
     /* text-transform:none; */
     font-weight:bold;
-    /* margin-top: 2rem; */
 }
 
 /* Underline styles */
 .menuppal ul li a {
   display: block;
   position: relative;
-  margin:0 1.5em;
+  margin-right:1.5em;
   overflow: hidden;
   width: min-content;
 }
@@ -308,7 +312,8 @@ color:var(--eggplant);
 }
 
 .hamburger.is-active{
-background-color:none;
+    background-color:none;
+    position: fixed;
 }
 
 ._layer{
@@ -384,8 +389,15 @@ background-color:none;
     background-color: inherit;
 }
 
-.menuppal ul li a {
+.menuppal ul li {
     margin-top: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuppal ul li a {
+    padding: 0;
+    margin: 0;
 }
 /* Menú hamburguesa end */
 }
