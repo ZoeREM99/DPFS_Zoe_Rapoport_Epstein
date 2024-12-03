@@ -248,7 +248,7 @@ main {
     color: whitesmoke;
 }
 
-@media (max-width: 768px) and (orientation: landscape) { 
+@media only screen and (max-width: 768px) and (orientation: landscape) { 
     .bestSellers h2 {
         padding: 20px 0;
         font-size: 2rem;

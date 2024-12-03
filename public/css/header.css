@@ -238,7 +238,7 @@ color:var(--eggplant);
 /* Fade in end */
   
 /* Estilos para pantallas medianas y pequeñas */
-@media (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
 
 #headerTop {
     position: relative;
@@ -402,7 +402,7 @@ color:var(--eggplant);
 /* Menú hamburguesa end */
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     #headerTop {
         position: relative;
