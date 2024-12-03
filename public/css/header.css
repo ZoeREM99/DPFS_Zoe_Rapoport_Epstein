@@ -329,13 +329,13 @@ color:var(--eggplant);
     transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 }
 
-.hamburger:hover .-top{
+.hamburger:active .-top{
     -webkit-transform:translateY(-100%);
     -ms-transform:translateY(-100%);
     transform:translateY(-100%);
 }
 
-.hamburger:hover .-bottom{
+.hamburger:active .-bottom{
     -webkit-transform:translateY(50%);
     -ms-transform:translateY(100%);
     transform:translateY(100%);
