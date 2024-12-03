@@ -140,7 +140,8 @@ main {
     padding-right: 2px;
 }
 /* Card end */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) 
+                   and (orientation: landscape) {
     .bannerPrincipal {
         margin: auto;
         max-width: 98%;
@@ -177,7 +178,7 @@ main {
 
 /* Best Sellers */
 .bestSellers {
-    background-color: var(--jasper);
+    background-color: var(--coral);
     width: 90%;
     margin: 30px auto;
     padding: 20px;
@@ -214,7 +215,8 @@ main {
     color: whitesmoke;
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) 
+                   and (orientation: landscape) { 
     .bestSellers h2 {
         padding: 20px 0;
         font-size: 2rem;
