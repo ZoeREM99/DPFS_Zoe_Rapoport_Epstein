@@ -238,7 +238,7 @@ color:var(--eggplant);
 /* Fade in end */
   
 /* Estilos para pantallas medianas y pequeñas */
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) and (orientation: landscape) {
 
 #headerTop {
     position: relative;
