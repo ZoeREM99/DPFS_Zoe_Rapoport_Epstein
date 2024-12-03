@@ -140,7 +140,41 @@ main {
     padding-right: 2px;
 }
 /* Card end */
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
+    .bannerPrincipal {
+        margin: auto;
+        max-width: 98%;
+        padding: 10px 5px;
+    } 
+
+    .bannerHP {
+        padding: 0;
+    }
+
+    .news {
+        margin: 10px 1% 0 1%;
+    }
+
+    .news h2 {
+        padding: 20px 0;
+    }
+
+    .addCart {
+        right: 20px;
+        top: 10px;
+        visibility: visible;
+        transition: none;
+        opacity: 1;
+    }
+
+    .card:hover .addCart{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 768px) {
     .bannerPrincipal {
         margin: auto;
         max-width: 98%;
@@ -214,7 +248,24 @@ main {
     color: whitesmoke;
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) { 
+@media (max-width: 768px) and (orientation: landscape) { 
+    .bestSellers h2 {
+        padding: 20px 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bestSellersBanner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bestSellersBanner img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) { 
     .bestSellers h2 {
         padding: 20px 0;
         font-size: 2rem;
