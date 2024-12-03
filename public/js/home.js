@@ -50,3 +50,36 @@ $(document).ready(function(){
     });
 });
 // Carrousel News end
+
+// Carrousel Best Sellers
+$(document).ready(function(){
+    $('.carrouselBestSellers').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed:4000,
+        dots: true,  
+        slidesToShow: 5,
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToScroll: 2,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '10px',
+              }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
+});
+// Carrousel Best Sellers end
