@@ -65,7 +65,7 @@ main {
 .addCart {
     position: absolute;
     top: 50px;
-    right: 10px;
+    right: 50px;
     z-index: 15;
     background-color: var(--eggplant);
     color: whitesmoke;
@@ -76,6 +76,7 @@ main {
     border-radius: 30px;
     visibility: hidden;
     opacity: 0;
+    border-width: 0px;
     transition: all 0.3s 0.5s ease-in-out;
 }
 
@@ -85,8 +86,10 @@ main {
     visibility: visible;
 }
 
-.addCart:hover {
-    opacity: 0.5;
+.addCart:active {
+    transition: 0s 0s linear;
+    background-color: transparent;
+    border: solid whitesmoke 1.5px;
 }
 
 .cardBody {
