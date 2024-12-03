@@ -128,6 +128,17 @@ main {
 .price span {
     padding-left: 3px;
 }
+
+.ranking {
+    margin:5px 2px 0 2px;
+    padding: 2px;
+    background-color: var(--eggplant);
+    border-radius: 30px;
+}
+
+.ranking .rankingNumber {
+    padding-right: 2px;
+}
 /* Card end */
 @media only screen and (max-width: 768px) {
     .bannerPrincipal {
@@ -212,6 +223,7 @@ main {
 
     .bestSellersBanner {
         flex-direction: column;
+        gap: 20px;
     }
 
     .bestSellersBanner img {
