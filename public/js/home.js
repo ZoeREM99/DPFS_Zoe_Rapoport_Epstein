@@ -6,6 +6,14 @@ $(document).ready(function(){
         autoplaySpeed:2000,
         centerMode: true,
         dots: true,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                centerMode: false,
+              }
+            }
+        ]
     });
 });
 // Carrousel principal end

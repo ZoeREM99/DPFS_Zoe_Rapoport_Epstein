@@ -8,7 +8,7 @@ main {
 
 /* Carrusel principal */
 .bannerPrincipal {
-    margin: 0 5%;
+    margin: auto;
     max-width: 90%;
     padding: 10px 5px;
 } 
@@ -131,7 +131,26 @@ main {
 }
 /* Card end */
 @media only screen and (max-width: 768px) {
+    .bannerPrincipal {
+        margin: auto;
+        max-width: 98%;
+        padding: 10px 5px;
+    } 
+
+    .bannerHP {
+        padding: 0;
+    }
+
+    .news {
+        margin: 10px 1% 0 1%;
+    }
+
+    .news h2 {
+        padding: 20px 0;
+    }
+
     .addCart {
+        right: 20px;
         top: 10px;
         visibility: visible;
         transition: none;
