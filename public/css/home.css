@@ -156,5 +156,11 @@ main {
         transition: none;
         opacity: 1;
     }
+
+    .card:hover .addCart{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
 }
 /* News end */
