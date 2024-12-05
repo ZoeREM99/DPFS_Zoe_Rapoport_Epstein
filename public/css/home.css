@@ -69,7 +69,7 @@ main {
 .addCart {
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 15px;
     z-index: 15;
     background-color: var(--eggplant);
     color: whitesmoke;
@@ -150,7 +150,7 @@ main {
     background-color: var(--coral);
     width: 90%;
     margin: 30px auto;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .bestSellers h2 {
@@ -185,6 +185,34 @@ main {
 }
 /* Best sellers end */
 
+/* Recomended */
+.recomended {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.articleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.carrouselRecomended {
+    width: 60%;
+}
+
+.recomendedWeek {
+    width: 40%;
+}
+
+.recomendedWeek img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
     /* Sección principal */
     .bannerPrincipal {
@@ -209,7 +237,7 @@ main {
     /* Cards */
     .addCart {
         position: absolute;
-        right: 20px;
+        right: 15px;
         top: 10px;
         visibility: visible;
         transition: none;
@@ -245,6 +273,28 @@ main {
     .bestSellersBanner img {
         max-width: 100%;
     }
+
+     /* Recomended */
+     .recomended {
+        width: 100%;
+    }
+
+    .articleContainer {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .carrouselRecomended {
+        width: 100%;
+    }
+    
+    .recomendedWeek {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -270,7 +320,7 @@ main {
     
     /* Cards */
     .addCart {
-        right: 20px;
+        right: 15px;
         top: 10px;
         visibility: visible;
         transition: none;
@@ -305,6 +355,28 @@ main {
 
     .bestSellersBanner img {
         max-width: 100%;
+    }
+
+    /* Recomended */
+    .recomended {
+        width: 100%;
+    }
+
+    .articleContainer {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .carrouselRecomended {
+        width: 100%;
+    }
+    
+    .recomendedWeek {
+        width: 100%;
     }
 }
 

@@ -34,7 +34,7 @@ $(document).ready(function(){
         slidesToShow: 5,
         centerMode: true,
         centerPadding: '30px',
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         responsive: [
             {
             breakpoint: 1200,
@@ -75,7 +75,7 @@ $(document).ready(function(){
         slidesToShow: 5,
         centerMode: true,
         centerPadding: '30px',
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         responsive: [
             {
             breakpoint: 1200,
@@ -105,3 +105,44 @@ $(document).ready(function(){
     });
 });
 // Carrousel Best Sellers end
+
+// Carrousel Recomended
+$(document).ready(function(){
+    $('.carrouselRecomended').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed:4000,
+        dots: true,  
+        slidesToShow: 4,
+        centerMode: false,
+        centerPadding: '30px',
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '100px',
+                }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+              }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
+});
+// Carrousel Recomended end
