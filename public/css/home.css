@@ -43,18 +43,21 @@ main {
 
 /* Card */
 .card {
-    position: relative;
     width: 150px;
     height: auto;
 }
 
-.cardImg {
-    display: block;
+.imgContainer {
     position: relative;
     max-width: 150px;
-    height: auto;
-    /* z-index: 10; */
     margin: auto;
+}
+
+.cardImg {
+    display: block;
+    width: 150px;
+    height: auto;
+    
 }
 
 .cardImg img {
@@ -160,6 +163,7 @@ main {
     }
 
     .addCart {
+        position: absolute;
         right: 20px;
         top: 10px;
         visibility: visible;
@@ -174,7 +178,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
     .bannerPrincipal {
         margin: auto;
         max-width: 98%;
@@ -248,7 +252,14 @@ main {
     color: whitesmoke;
 }
 
-@media only screen and (orientation: landscape) { 
+@media only screen and (max-width:1200) and (orientation: landscape) { 
+    .bestSellers {
+        background-color: blue;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .bestSellers h2 {
         padding: 20px 0;
         font-size: 2rem;
@@ -265,7 +276,13 @@ main {
     }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 768px) { 
+    .bestSellers {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .bestSellers h2 {
         padding: 20px 0;
         font-size: 2rem;
@@ -273,6 +290,7 @@ main {
     }
 
     .bestSellersBanner {
+        padding: 5px;
         flex-direction: column;
         gap: 20px;
     }

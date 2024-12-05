@@ -402,7 +402,7 @@ color:var(--eggplant);
 /* Menú hamburguesa end */
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
 
     #headerTop {
         position: relative;
