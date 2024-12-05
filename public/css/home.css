@@ -206,6 +206,7 @@ main {
         padding: 20px 0;
     }
 
+    /* Cards */
     .addCart {
         position: absolute;
         right: 20px;
@@ -223,7 +224,7 @@ main {
 
     /* Best sellers */
     .bestSellers {
-        margin: 0;
+        margin: 0 0 20px 0;
         padding: 0;
         width: 100%;
     }
@@ -247,6 +248,7 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+    /* Sección principal */
     .bannerPrincipal {
         margin: auto;
         max-width: 98%;
@@ -257,6 +259,7 @@ main {
         padding: 0;
     }
 
+    /* News */
     .news {
         margin: 10px 1% 0 1%;
     }
@@ -264,7 +267,8 @@ main {
     .news h2 {
         padding: 20px 0;
     }
-
+    
+    /* Cards */
     .addCart {
         right: 20px;
         top: 10px;
@@ -279,8 +283,9 @@ main {
         visibility: visible;
     }
 
+    /* Best Sellers */
     .bestSellers {
-        margin: 0;
+        margin: 0 0 20px 0;
         padding: 0;
         width: 100%;
     }
