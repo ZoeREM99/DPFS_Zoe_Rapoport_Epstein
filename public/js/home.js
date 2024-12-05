@@ -39,7 +39,7 @@ $(document).ready(function(){
             {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '100px',
@@ -80,7 +80,7 @@ $(document).ready(function(){
             {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '100px',

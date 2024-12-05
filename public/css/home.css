@@ -40,6 +40,7 @@ main {
     display: flex;
     justify-content: center;
 }
+/* News end */
 
 /* Card */
 .card {
@@ -143,75 +144,6 @@ main {
     padding-right: 2px;
 }
 /* Card end */
-@media only screen and (max-width: 1200px) and (orientation: landscape) {
-    .bannerPrincipal {
-        margin: auto;
-        max-width: 98%;
-        padding: 10px 5px;
-    } 
-
-    .bannerHP {
-        padding: 0;
-    }
-
-    .news {
-        margin: 10px 1% 0 1%;
-    }
-
-    .news h2 {
-        padding: 20px 0;
-    }
-
-    .addCart {
-        position: absolute;
-        right: 20px;
-        top: 10px;
-        visibility: visible;
-        transition: none;
-        opacity: 1;
-    }
-
-    .card:hover .addCart{
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .bannerPrincipal {
-        margin: auto;
-        max-width: 98%;
-        padding: 10px 5px;
-    } 
-
-    .bannerHP {
-        padding: 0;
-    }
-
-    .news {
-        margin: 10px 1% 0 1%;
-    }
-
-    .news h2 {
-        padding: 20px 0;
-    }
-
-    .addCart {
-        right: 20px;
-        top: 10px;
-        visibility: visible;
-        transition: none;
-        opacity: 1;
-    }
-
-    .card:hover .addCart{
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-    }
-}
-/* News end */
 
 /* Best Sellers */
 .bestSellers {
@@ -251,10 +183,46 @@ main {
 .bestSellers .carrouselBestSellers .card .cardBody .price {
     color: whitesmoke;
 }
+/* Best sellers end */
 
-@media only screen and (max-width:1200) and (orientation: landscape) { 
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+    /* Sección principal */
+    .bannerPrincipal {
+        margin: auto;
+        max-width: 98%;
+        padding: 10px 5px;
+    } 
+
+    .bannerHP {
+        padding: 0;
+    }
+
+    /* News */
+    .news {
+        margin: 10px 1% 0 1%;
+    }
+
+    .news h2 {
+        padding: 20px 0;
+    }
+
+    .addCart {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        visibility: visible;
+        transition: none;
+        opacity: 1;
+    }
+
+    .card:hover .addCart{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Best sellers */
     .bestSellers {
-        background-color: blue;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -267,8 +235,10 @@ main {
     }
 
     .bestSellersBanner {
+        padding: 10px;
         flex-direction: column;
         gap: 20px;
+        margin-bottom: 20px;
     }
 
     .bestSellersBanner img {
@@ -276,7 +246,39 @@ main {
     }
 }
 
-@media (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
+    .bannerPrincipal {
+        margin: auto;
+        max-width: 98%;
+        padding: 10px 5px;
+    } 
+
+    .bannerHP {
+        padding: 0;
+    }
+
+    .news {
+        margin: 10px 1% 0 1%;
+    }
+
+    .news h2 {
+        padding: 20px 0;
+    }
+
+    .addCart {
+        right: 20px;
+        top: 10px;
+        visibility: visible;
+        transition: none;
+        opacity: 1;
+    }
+
+    .card:hover .addCart{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
     .bestSellers {
         margin: 0;
         padding: 0;
@@ -293,9 +295,11 @@ main {
         padding: 5px;
         flex-direction: column;
         gap: 20px;
+        margin-bottom: 20px;
     }
 
     .bestSellersBanner img {
         max-width: 100%;
     }
 }
+
