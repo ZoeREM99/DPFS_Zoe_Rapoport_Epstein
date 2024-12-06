@@ -147,3 +147,45 @@ $(document).ready(function(){
     });
 });
 // Carrousel Recomended end
+
+// Carrousel Categories
+$(document).ready(function(){
+    $('.carrouselCategories').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed:4000,
+        dots: false,  
+        slidesToShow: 3,
+        centerMode: false,
+        centerPadding: '30px',
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: false,
+                centerPadding: '100px',
+                }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: false,
+              }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
+});
+// Carrousel Categories end
