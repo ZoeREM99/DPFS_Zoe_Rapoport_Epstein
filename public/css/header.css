@@ -250,7 +250,7 @@ color:var(--eggplant);
 .logoNav {
     left: 100px;
     padding-top: 1rem;
-    width: 55%;
+    width: 40%;
 }
 
 #headerSearchBar {
@@ -277,8 +277,9 @@ color:var(--eggplant);
 
 #navbtns button {
     color: white;
-    height:37px;
-    width:37px;
+    height:70px;
+    width:70px;
+    font-size: 1.7rem;
     background-color: var(--jasper);
 }
 
@@ -287,28 +288,25 @@ color:var(--eggplant);
 }
 
 /* Menú hamburguesa */
-.hamburger {
-    display: block;
-}
-
 .hamburger{
+    display: block;
     position:absolute;
     background-color:transparent;
-    left:0;
-    top:0;
-    height:30px;
-    width:30px;
-    padding:30px 10px;
-    -webkit-transform:translate3d(0, 0, 0);
+    left:30px;
+    top:30px;
+    /* height:50px; */
+    /* width:50px; */
+    /* padding:30px 10px; */
+    /* -webkit-transform:translate3d(0, 0, 0);
     transform:translate3d(0, 0, 0);
     -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); */
     z-index:1002;
     cursor:pointer;
-    -webkit-user-select:none;
+    /* -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
-    user-select:none
+    user-select:none */
 }
 
 .hamburger.is-active{
@@ -318,18 +316,50 @@ color:var(--eggplant);
 
 ._layer{
     background:var(--eggplant);
-    margin-bottom:4px;
+    margin-bottom: 17px;
     border-radius:1.5px;
-    width:30px;
-    height:5px;
+    width:60px;
+    height:7px;
     opacity:1;
-    -webkit-transform:translate3d(0, 0, 0);
+    /* Improved transition for smoother animations */
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    /* -webkit-transform:translate3d(0, 0, 0);
     transform:translate3d(0, 0, 0);
     -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); */
 }
 
-.hamburger:active .-top{
+  /* Styles for the individual menu layer elements when the button is active (hover or touch) */
+  .hamburger:active .-top,
+  .hamburger:active .-bottom {
+    /* Use transform: rotate instead of separate translate and rotate for cleaner cross formation */
+    transform: rotate(45deg);
+  }
+  
+  /* Styles for the individual menu layer elements when the menu is fully active (`is-active` class) */
+  .hamburger.is-active .-top {
+    position: absolute;
+    /* Adjust rotation angle for a more accurate cross shape */
+    transform: translateY(-100%) rotate(45deg);
+    top: 30px;
+  }
+  
+  .hamburger.is-active .-mid {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active .-bottom {
+    position: absolute;
+    top: 16px;
+    transform: translateY(100%) rotate(-45deg);  /* Corrected rotation for opposite direction */
+  }
+  
+  /* Styles for the main menu content when the menu is active (`is-active` class) */
+  .menuppal.is_active {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+/* .hamburger:active .-top{
     -webkit-transform:translateY(-100%);
     -ms-transform:translateY(-100%);
     transform:translateY(-100%);
@@ -359,7 +389,7 @@ color:var(--eggplant);
 
 .menuppal.is_active{
     transform: translate3d(0px, 0px, 0px);
-}
+} */
 
 .menuppal{
     background-color: rgba(255, 255, 255, 0.80);
@@ -451,79 +481,76 @@ color:var(--eggplant);
     }
     
     /* Menú hamburguesa */
-    .hamburger {
-        display: block;
-    }
-    
-    .hamburger{
-        position:absolute;
-        background-color:transparent;
-        left:0;
-        top:0;
-        height:30px;
-        width:30px;
-        padding:30px 10px;
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0);
-        -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        z-index:1002;
-        cursor:pointer;
-        -webkit-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        user-select:none
-    }
-    
-    .hamburger.is-active{
-        background-color:none;
-        position: fixed;
-    }
-    
-    ._layer{
-        background:var(--eggplant);
-        margin-bottom:4px;
-        border-radius:1.5px;
-        width:30px;
-        height:5px;
-        opacity:1;
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0);
-        -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    }
-    
-    .hamburger:active .-top{
-        -webkit-transform:translateY(-100%);
-        -ms-transform:translateY(-100%);
-        transform:translateY(-100%);
-    }
-    
-    .hamburger:active .-bottom{
-        -webkit-transform:translateY(50%);
-        -ms-transform:translateY(100%);
-        transform:translateY(100%);
-        }
-    
-    .hamburger.is-active .-top{
-        -webkit-transform:translateY(200%) rotate(45deg) !important;
-        -ms-transform:translateY(200%) rotate(45deg) !important;
-        transform:translateY(200%) rotate(45deg) !important;
-    }
-    
-    .hamburger.is-active .-mid{
-        opacity:0;
-    }
-    
-    .hamburger.is-active .-bottom{
-        -webkit-transform:translateY(-200%) rotate(135deg) !important;
-        -ms-transform:translateY(-200%) rotate(135deg) !important;
-        transform:translateY(-200%) rotate(135deg) !important;
-    }
-    
-    .menuppal.is_active{
-        transform: translate3d(0px, 0px, 0px);
-    }
+.hamburger{
+    display: block;
+    position:absolute;
+    background-color:transparent;
+    left:20px;
+    top:30px;
+    /* height:50px; */
+    /* width:50px; */
+    /* padding:30px 10px; */
+    /* -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); */
+    z-index:1002;
+    cursor:pointer;
+    /* -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none */
+}
+
+.hamburger.is-active{
+    background-color:none;
+    position: fixed;
+}
+
+._layer{
+    background:var(--eggplant);
+    margin-bottom: 7px;
+    border-radius:1.5px;
+    width:30px;
+    height:5px;
+    opacity:1;
+    /* Improved transition for smoother animations */
+    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    /* -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); */
+}
+
+  /* Styles for the individual menu layer elements when the button is active (hover or touch) */
+  .hamburger:active .-top,
+  .hamburger:active .-bottom {
+    /* Use transform: rotate instead of separate translate and rotate for cleaner cross formation */
+    transform: rotate(45deg);
+  }
+  
+  /* Styles for the individual menu layer elements when the menu is fully active (`is-active` class) */
+  .hamburger.is-active .-top {
+    position: absolute;
+    /* Adjust rotation angle for a more accurate cross shape */
+    transform: translateY(-100%) rotate(45deg);
+    top: 20px;
+  }
+  
+  .hamburger.is-active .-mid {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active .-bottom {
+    position: absolute;
+    top: 10px;
+    transform: translateY(100%) rotate(-45deg);  /* Corrected rotation for opposite direction */
+  }
+  
+  /* Styles for the main menu content when the menu is active (`is-active` class) */
+  .menuppal.is_active {
+    transform: translate3d(0px, 0px, 0px);
+  }
     
     .menuppal{
         background-color: rgba(255, 255, 255, 0.80);
