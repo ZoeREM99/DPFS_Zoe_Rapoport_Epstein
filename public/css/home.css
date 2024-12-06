@@ -1,8 +1,13 @@
 @import "variables.css";
 
+html {
+    margin: 0;
+}
+
 main {
     box-sizing: border-box;
     font-family: var(--font--family);
+    margin: 0;
 }
 
 h2 {
@@ -481,7 +486,7 @@ h4 {
     }
 
     .category3 {
-        margin: 0 0 20px 0;
+        margin: 0;
     }
 
     .category1 {
@@ -626,7 +631,7 @@ h4 {
     }
 
     .category3 {
-        margin: 0 0 20px 0;
+        margin: 0;
         justify-content: space-around;
     }
 
