@@ -252,8 +252,8 @@ main {
 
     /* Best sellers */
     .bestSellers {
-        margin: 0 0 20px 0;
-        padding: 0;
+        margin: 0;
+        padding: 0 0 20px 0;
         width: 100%;
     }
 
@@ -277,10 +277,11 @@ main {
      /* Recomended */
      .recomended {
         width: 100%;
+        margin: 0;
     }
 
     .articleContainer {
-        margin: 0 10px;
+        margin: 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -293,7 +294,8 @@ main {
     }
     
     .recomendedWeek {
-        width: 100%;
+        width: 97.5%;
+        margin:auto;
     }
 }
 
@@ -335,8 +337,8 @@ main {
 
     /* Best Sellers */
     .bestSellers {
-        margin: 0 0 20px 0;
-        padding: 0;
+        margin: 0;
+        padding: 0 0 20px 0;
         width: 100%;
     }
 
@@ -360,10 +362,11 @@ main {
     /* Recomended */
     .recomended {
         width: 100%;
+        margin: 0;
     }
 
     .articleContainer {
-        margin: 0 10px;
+        margin: 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -376,7 +379,8 @@ main {
     }
     
     .recomendedWeek {
-        width: 100%;
+        width: 97.5%;
+        margin:auto;
     }
 }
 

@@ -138,6 +138,7 @@ $(document).ready(function(){
             {
             breakpoint: 600,
             settings: {
+                centerMode: true,
                 slidesToShow: 2,
                 slidesToScroll: 1
               }
