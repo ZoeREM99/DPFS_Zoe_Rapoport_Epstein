@@ -187,6 +187,7 @@ main {
 #shippingForm select {
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     padding: 5px;
     line-height: 1;
     border: solid 1px var(--slate--gray);
