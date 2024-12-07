@@ -1,0 +1,479 @@
+@import "variables.css";
+
+main {
+    font-family: var(--font--family);
+}
+
+.signUp {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+}
+
+.signUpImg {
+    background-image: url("../img/other/logIn.jpg");
+    background-color: var(--night);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.signUpBody {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: solid 1px var(--slate--gray);
+    border-radius: 10px 0 0 10px;
+}
+
+.signUpBody h2 {
+    cursor: default;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--jasper);
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+#signUpForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 0.8rem;
+    left: 20px;
+}
+
+.usuario {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#signUpForm .usuario label {
+    position: absolute;
+    left: -150px;
+    font-weight: bold;
+    color: var(--eggplant);
+}
+
+.fullName {
+    display: flex;
+}
+
+.nombre {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.apellido {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#signUpForm .nombre label {
+    position: absolute;
+    left: -150px;
+    font-weight: bold;
+    color: var(--eggplant);
+}
+
+#signUpForm .apellido label {
+    position: relative;
+    left: -20px;
+    font-weight: bold;
+    color: var(--eggplant);
+}
+
+.email {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#signUpForm .email label {
+    position: absolute;
+    left: -150px;
+    font-weight: bold;
+    color: var(--eggplant);
+}
+
+.contraseña {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#signUpForm .contraseña label {
+    position: absolute;
+    left: -150px;
+    font-weight: bold;
+    color: var(--eggplant);
+}
+
+.contraseña2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#signUpForm .contraseña2 label {
+    position: absolute;
+    left: -150px;
+    font-weight: bold;
+    color: var(--eggplant);
+}
+
+#signUpForm .nombre input {
+    appearance: none;
+    border: none;
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+#signUpForm .nombre input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--jasper);
+}
+
+#signUpForm .apellido input {
+    appearance: none;
+    border: none;
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+#signUpForm .apellido input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--jasper);
+}
+
+#signUpForm .usuario input {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+#signUpForm .usuario input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--jasper);
+}
+
+#signUpForm .email input {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+#signUpForm .email input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--jasper);
+}
+
+#signUpForm .contraseña input {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+#signUpForm .contraseña input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--jasper);
+}
+
+#signUpForm .contraseña2 input {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+#signUpForm .contraseña2 input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--jasper);
+}
+
+.access {
+    margin: 40px auto 10px auto;
+    padding: 10px 0;
+    width: 80%;
+    font-family: var(--font--family);
+    font-size: 1.2rem;
+    background-color: var(--coral);
+    border: none;
+    border-radius: 3px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.access:hover {
+    background-color: white;
+    color: var(--coral);
+    border: solid 1px var(--coral);
+}
+
+.signUpWith {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpWith span {
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.accountbtns {
+    display: flex;
+    gap: 20px;
+}
+
+.accountbtn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.accountbtn:hover {
+    opacity: 0.8;
+    font-size: 1.7rem;
+}
+
+.accountbtn:first-child {
+    background-color: #EA4335;
+}
+
+.accountbtn:last-child {
+    background-color: #3B5998;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    font-size: 0.8rem;
+    color: var(--slate--gray);
+    cursor: default;
+}
+
+.register a {
+    color: var(--slate--gray);
+    transition: all 0.3s ease-in-out;
+}
+
+.register a:hover {
+    opacity: 0.8;
+} 
+
+@media only screen and (max-width: 768px) {
+    .signUp {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .signUpImg {
+        display: none;
+    }
+    .signUpBody {
+        width: 100%;
+        padding: 40px 5px;
+        border-radius: 10px;
+    }
+
+    #signUpForm {
+        width: 80%;
+        left: 0;
+    }
+
+    .nombre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apellido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .usuario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contraseña {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contraseña2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #signUpForm .usuario label {
+        position: relative;
+        left: 0;
+        font-weight: bold;
+        color: var(--eggplant);
+    }
+
+    #signUpForm .nombre label {
+        position: relative;
+        left: 0;
+        font-weight: bold;
+        color: var(--eggplant);
+    }
+
+    #signUpForm .apellido label {
+        position: relative;
+        left: 0;
+        font-weight: bold;
+        color: var(--eggplant);
+    }
+
+    #signUpForm .email label {
+        position: relative;
+        left: 0;
+        font-weight: bold;
+        color: var(--eggplant);
+    }
+    
+    #signUpForm .contraseña label {
+        position: relative;
+        left: 0;
+        font-weight: bold;
+        color: var(--eggplant);
+    }
+
+    #signUpForm .contraseña2 label {
+        position: relative;
+        left: 0;
+        font-weight: bold;
+        color: var(--eggplant);
+    }
+    
+    #signUpForm .usuario input {
+        appearance: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--slate--gray);
+        transition: all 0.3s ease-in-out;
+        align-self: center;
+    }
+
+    .fullName {
+        gap: 10px;
+    }
+
+    #signUpForm .nombre input {
+        appearance: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--slate--gray);
+        transition: all 0.3s ease-in-out;
+        align-self: flex-start;
+    }
+
+    #signUpForm .apellido input {
+        appearance: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--slate--gray);
+        transition: all 0.3s ease-in-out;
+        align-self: flex-start;
+    }
+
+    #signUpForm .email input {
+        appearance: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--slate--gray);
+        transition: all 0.3s ease-in-out;
+        align-self: flex-start;
+    }
+
+    #signUpForm .contraseña input {
+        appearance: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--slate--gray);
+        transition: all 0.3s ease-in-out;
+        align-self: center;
+    }
+
+    #signUpForm .contraseña2 input {
+        appearance: none;
+        border: none;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--slate--gray);
+        transition: all 0.3s ease-in-out;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+    .signUp {
+        width: 90%;
+        margin: auto;
+    }
+
+    .signUpImg {
+        width: 10%;
+    }
+
+    .signUpBody {
+        width: 90%;
+    }
+
+    #signUpForm {
+        left: 50px;
+    }
+}

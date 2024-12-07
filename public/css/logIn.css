@@ -34,7 +34,6 @@ main {
     font-weight: bold;
     color: var(--jasper);
     padding: 20px 30px;
-    border-radius: 10px;
 }
 
 .logInBody {
@@ -202,10 +201,14 @@ main {
     cursor: default;
 }
 
-.register span:last-child {
-    text-decoration: underline;
-    cursor: pointer;
+.register a {
+    color: var(--slate--gray);
+    transition: all 0.3s ease-in-out;
 }
+
+.register a:hover {
+    opacity: 0.8;
+} 
 
 @media only screen and (max-width: 768px) {
     .logIn {

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librería Palas - Registrarse</title>
+    <title>Librería Palas - Home</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/073e576f16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/signUp.css">
     <link rel="stylesheet" href="../public/css/header.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/img/logos/LP.png" type="jpg">
@@ -19,12 +20,12 @@
                 <div class="_layer -mid"></div>
                 <div class="_layer -bottom"></div>
             </div>
-            <a class="logoNav" href="../index.html"><img src="../public/img/logos/LibreriaPalas.png" alt="Librería Palas logo"></a>
+            <a class="logoNav" href="/index.html"><img src="../public/img/logos/LibreriaPalas.png" alt="Librería Palas logo"></a>
             <div id="headerSearchBar">
                 <form id="searchbar" onsubmit="event.preventDefault();" role="search">
                     <label id="searchlabel" for="search">Search for stuff</label>
                     <input id="search" type="search" placeholder="Buscar..."/>
-                    <button id="searchbtn" type="submit">Go</button>    
+                    <button id="searchbtn" type="submit">Buscar</button>    
                 </form>
             </div>
             <div id="navbtnsDesktop">
@@ -36,10 +37,10 @@
                 </button>
             </div>
             <div id="navbtns">
-                <button type="button" class="headerbtn signUpbtn" onclick="location.href='/views/signUp.html'">
+                <button type="button" class="headerbtn signUpbtn" onclick="location.href='./views/signUp.html'">
                     <i class="fa-solid fa-circle-user"></i>
                 </button>
-                <button type="button" class="headerbtn shoppingbtn" onclick="location.href='/views/shoppingCart.html'">
+                <button type="button" class="headerbtn shoppingbtn" onclick="location.href='./views/shoppingCart.html'">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </button>
             </div>
@@ -55,9 +56,81 @@
         </section>
     </header>
     <main>
-        
+        <section class="signUp">
+            <article class="signUpImg"> 
+            </article>
+            <article class="signUpBody">
+                <h2>Crear cuenta</h2>
+                <form id="signUpForm">
+                    <div class="fullName">
+                        <div class="nombre">
+                            <label for="name">Nombre</label>
+                            <input id="name" type="text" placeholder="Ingresar nombre" name="name" required>
+                        </div>
+                        <div class="apellido">
+                            <label for="surname">Apellido</label>
+                            <input id="surname" type="text" placeholder="Ingresar apellido" name="surname" required>
+                        </div>
+                    </div>
+                    <div class="usuario">
+                        <label for="username">Usuario</label>
+                        <input id="username" type="text" placeholder="Ingresar usuario" name="username" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Correo electrónico</label>
+                        <input id="email" type="email" placeholder="Ingresar correo electrónico" name="email" required>
+                    </div>
+                    <div class="contraseña">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Ingresar contraseña" required>
+                    </div>
+                    <div class="contraseña2">
+                        <label for="password2">Repetir contraseña</label>
+                        <input type="password" name="password2" id="password2" placeholder="Volver a ingresar la contraseña" required>
+                    </div>
+                    <button class="access" type="submit" form="signUpForm">Registrarse</button>
+                    <div class="signUpWith">
+                        <span>Crear cuenta con</span>
+                        <div class="accountbtns">
+                            <div class="accountbtn"><i class="fa-brands fa-google"></i></div>
+                            <div class="accountbtn"><i class="fa-brands fa-facebook"></i></div>
+                        </div>
+                    </div>
+                    <div class="register"><span>¿Ya tenés una cuenta?</span><span><a href="./logIn.html">Ingresa ahora</a></span></div>
+                </form>
+            </article>
+        </section>
+    </main>
     <footer>
-
+        <section class="footerLogo">
+            <img src="../public/img/logos/libreriaPalasRedondo.png" alt="Librería Palas logo">
+        </section>
+        <section class="footerText">
+            <article class="data">
+                <h3>Información de la tienda</h3>
+                <ul>
+                    <li>Locales</li>
+                    <li>Franquicias</li>
+                    <li>Políticas de privacidad</li>
+                </ul>
+            </article>
+            <article class="contact">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li>Trabajar con nosotros</li>
+                    <li>Envíanos un mensaje</li>
+                </ul>
+            </article>
+            <article class="socialLinks">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </article>
+        </section>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
