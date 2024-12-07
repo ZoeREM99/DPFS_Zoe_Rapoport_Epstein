@@ -358,12 +358,12 @@ main {
 
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
     /* News */
-    .news {
-        margin: 10px 1% 0 1%;
+    .mightLike {
+        width: 100%;
     }
 
-    .news h2 {
-        padding: 20px 0;
+    .mightLike h2 {
+        padding: 30px;
     }
 
     /* Cards */
@@ -384,13 +384,40 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-    /* News */
-    .news {
-        margin: 10px 1% 0 1%;
+    /* Shopping Cart */
+    .shoppingCart {
+        flex-direction: column;
     }
 
-    .news h2 {
-        padding: 20px 0;
+    .products {
+        width: inherit;
+    }
+
+    .product {
+        flex-wrap: wrap;
+    }
+
+    .summary {
+        width: inherit;
+    }
+
+    .product:last-child {
+        border-bottom: solid 2px var(--night);   
+    }
+
+    .productPrice {
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* Might Like */
+    .mightLike {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mightLike h2 {
+        padding: 20px 30px;
     }
     
     /* Cards */
