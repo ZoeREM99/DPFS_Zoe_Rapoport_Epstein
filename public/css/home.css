@@ -190,8 +190,12 @@ h4 {
     padding-bottom: 30px;
 }
 
-.bestSellersBanner img {
+.bestSellerImg{
     max-width: 45%;
+}
+
+.bestSellerImg img {
+    width: 100%;
 }
 
 .bestSellers .carrouselBestSellers .card .cardBody .title {
@@ -435,7 +439,7 @@ h4 {
         margin-bottom: 20px;
     }
 
-    .bestSellersBanner img {
+    .bestSellerImg{
         max-width: 100%;
     }
 
@@ -582,7 +586,7 @@ h4 {
         margin-bottom: 20px;
     }
 
-    .bestSellersBanner img {
+    .bestSellerImg{
         max-width: 100%;
     }
 

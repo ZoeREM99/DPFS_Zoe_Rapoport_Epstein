@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/073e576f16.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/css/shoppingCart.css">
+    <link rel="stylesheet" href="../public/css/productDetail.css">
     <link rel="stylesheet" href="../public/css/header.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/img/logos/LP.png" type="jpg">
@@ -56,91 +56,48 @@
         </section>
     </header>
     <main>
-        <section class="shoppingCart">
-            <article class="products">
-                <div class="shoppingCartTitle">
-                    <h2>Carrito de compras</h2>
-                    <div class="productAmount"><span>3</span><span>productos</span></div>
-                </div>
-                <div class="product">
-                    <a href="./productDetail1.html"><img class="productImg" src="../public/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal"></a>
-                    <a href="./productDetail1.html" class="productName">Harry Potter y la Piedra Filosofal</a>
-                    <div class="selectQuantity">
-                        <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
-                        </div>
-                        <div class="selectQuantitybtns">
-                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                    </div>
-                    <div class="productPrice">
-                        <span>AR$</span><span class="priceNumber">10.000</span>
-                    </div>
-                    <div class="eraseProduct">
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="./productDetail2.html"><img class="productImg" src="../public/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta"></a>
-                    <a href="./productDetail2.html" class="productName">Harry Potter y la Cámara Secreta</a>
-                    <div class="selectQuantity">
-                        <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
-                        </div>
-                        <div class="selectQuantitybtns">
-                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                    </div>
-                    <div class="productPrice">
-                        <span>AR$</span><span class="priceNumber">10.000</span>
-                    </div>
-                    <div class="eraseProduct">
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="./productDetail3.html"><img class="productImg" src="../public/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban"></a>
-                    <a href="./productDetail3.html" class="productName">Harry Potter y el Prisionero de Azkaban</a>
-                    <div class="selectQuantity">
-                        <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
-                        </div>
-                        <div class="selectQuantitybtns">
-                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                    </div>
-                    <div class="productPrice">
-                        <span>AR$</span><span class="priceNumber">10.000</span>
-                    </div>
-                    <div class="eraseProduct">
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                </div>
+        <section class="productDetail">
+            <article class="productDetailImg">
+                <img src="../public/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban">
             </article>
-            <article class="summary">
-                <h3>Resumen</h3>
-                <div class="priceSubtotal">
-                    <div>Subtotal</div>
-                    <div><span>AR$</span><span class="priceNumber">30.000</span></div>
+            <article class="productDetailBody">
+                <div class="breadcrumbs">
+                    <span>Literatura</span><span>/</span><span>Infantil y Juvenil</span>
                 </div>
-                <div class="shipping">
-                    <form id="shippingForm">
-                        <label for="shippingSelect">Lugar de envío:</label>
-                        <select id="shippingSelect" name="shippingList" form="shippingForm" required>
-                            <option hidden value="">Selecciona una opcción</option>
-                            <option value="CABA">Envío dentro de CABA - Envío gratis</option>
-                            <option value="conurbano">Envío dentro del conurbano - AR$ 1.000</option>
-                            <option value="Bs As">Envío dentro de la provincia de Buenos Aires -  AR$ 1.500</option>
-                            <option value="interior">Envío al interior - AR$ 2.000</option>
-                        </select>
-                    </form>
+                <h2 class="productDetailTitle">Harry Potter y el Prisionero de Azkaban</h2>
+                <h3 class="productDetailAuthor">J.K. Rowling</h3>
+                <div class="productDetailQuantity">
+                    <h4 class="productDetailPrice"><span>AR$</span><span>10.000</span></h4>
+                    <div class="selectQuantity">
+                        <div class="selectQuantityWarning">
+                            <span>Quedan</span><span>#</span><span>disponibles</span>
+                        </div>
+                        <div class="selectQuantitybtns">
+                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="priceTotal">
-                    <div>Total</div>
-                    <div><span>AR$</span><span class="priceNumber">30.000 + envío</span></div>
-                </div>
-                <button class="checkout" type="submit" form="shippingForm">Finalizar compra</button>
+                <a class="productDetailAddCart" href="./shoppingCart.html">Agregar al carrito</a>
             </article>
+        </section>
+        <section class="productDetailDesc">
+            <div class="sinopsis">
+                <h4>Sinópsis</h4>
+                <div>Por la cicatriz que lleva en la frente, sabemos que Harry Potter no es un niño como los demás, sino el héroe que venció a lord Voldemort, culpable de la muerte de sus padres. Desde entonces, Harry no tiene más remedio que vivir con sus pesados tíos y su insoportable primo Dudley, todos ellos muggles, o sea, personas no magas. Igual que en las dos primera partes de la serie -La piedra filosofal y La cámara secreta- Harry aguarda con impaciencia el inicio del tercer curso en el Colegio Hogwarts de Magia y Hechicería. Tras haber cumplido los trece años, solo y lejos de sus amigos de Hogwarts, Harry se pelea con su bigotuda tía Marge, a la que convierte en globo, y debe huir en un autobús mágico. Mientras tanto, de la prisión de Azkaban se ha escapado un terrible villano, Sirius Black, un asesino en serie con poderes mágicos que fue cómplice de lord Voldemort y que parece dispuesto a eliminar a Harry del mapa. Y por si esto fuera poco, Harry deberá enfrentarse también a unos terribles monstruos, los dementores, seres abominables capaces de robarles la felicidad a los magos y de borrar todo recuerdo hermoso de aquellos que osan mirarlos. Lo que ninguno de estos malvados personajes sabe es que Harry, con la ayuda de sus fieles amigos Ron y Hermione, es capaz de todo y mucho más.</div>
+            </div>
+            <div class="desc">
+                <h4>Especificaciones</h4>
+                <div>
+                    <ul>
+                        <li><span>Peso:</span><span>436 g</span></li>
+                        <li><span>Idioma:</span><span>Español</span></li>
+                        <li><span>Editorial:</span><span class="editorial">SALAMANDRA</span></li>
+                        <li><span>Fecha de publicación:</span><span>08/07/1999</span></li>
+                        <li><span>Dimensiones:</span><span>15.00cm X 23.00cm X 3.80cm</span></li>
+                        <li><span>Número de páginas:</span><span>384</span></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="mightLike">
             <h2>Te podría interesar</h2>
@@ -274,6 +231,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
     <script src="../public/js/header.js"></script>
-    <script src="../public/js/shoppingCart.js"></script>
+    <script src="../public/js/productDetail.js"></script>
 </body>
 </html>

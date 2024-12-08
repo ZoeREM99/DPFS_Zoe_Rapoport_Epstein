@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/073e576f16.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/css/shoppingCart.css">
+    <link rel="stylesheet" href="../public/css/productDetail.css">
     <link rel="stylesheet" href="../public/css/header.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="shortcut icon" href="../public/img/logos/LP.png" type="jpg">
@@ -56,91 +56,48 @@
         </section>
     </header>
     <main>
-        <section class="shoppingCart">
-            <article class="products">
-                <div class="shoppingCartTitle">
-                    <h2>Carrito de compras</h2>
-                    <div class="productAmount"><span>3</span><span>productos</span></div>
-                </div>
-                <div class="product">
-                    <a href="./productDetail1.html"><img class="productImg" src="../public/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal"></a>
-                    <a href="./productDetail1.html" class="productName">Harry Potter y la Piedra Filosofal</a>
-                    <div class="selectQuantity">
-                        <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
-                        </div>
-                        <div class="selectQuantitybtns">
-                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                    </div>
-                    <div class="productPrice">
-                        <span>AR$</span><span class="priceNumber">10.000</span>
-                    </div>
-                    <div class="eraseProduct">
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="./productDetail2.html"><img class="productImg" src="../public/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta"></a>
-                    <a href="./productDetail2.html" class="productName">Harry Potter y la Cámara Secreta</a>
-                    <div class="selectQuantity">
-                        <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
-                        </div>
-                        <div class="selectQuantitybtns">
-                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                    </div>
-                    <div class="productPrice">
-                        <span>AR$</span><span class="priceNumber">10.000</span>
-                    </div>
-                    <div class="eraseProduct">
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="./productDetail3.html"><img class="productImg" src="../public/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban"></a>
-                    <a href="./productDetail3.html" class="productName">Harry Potter y el Prisionero de Azkaban</a>
-                    <div class="selectQuantity">
-                        <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
-                        </div>
-                        <div class="selectQuantitybtns">
-                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
-                        </div>
-                    </div>
-                    <div class="productPrice">
-                        <span>AR$</span><span class="priceNumber">10.000</span>
-                    </div>
-                    <div class="eraseProduct">
-                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
-                    </div>
-                </div>
+        <section class="productDetail">
+            <article class="productDetailImg">
+                <img src="../public/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal">
             </article>
-            <article class="summary">
-                <h3>Resumen</h3>
-                <div class="priceSubtotal">
-                    <div>Subtotal</div>
-                    <div><span>AR$</span><span class="priceNumber">30.000</span></div>
+            <article class="productDetailBody">
+                <div class="breadcrumbs">
+                    <span>Literatura</span><span>/</span><span>Infantil y Juvenil</span>
                 </div>
-                <div class="shipping">
-                    <form id="shippingForm">
-                        <label for="shippingSelect">Lugar de envío:</label>
-                        <select id="shippingSelect" name="shippingList" form="shippingForm" required>
-                            <option hidden value="">Selecciona una opcción</option>
-                            <option value="CABA">Envío dentro de CABA - Envío gratis</option>
-                            <option value="conurbano">Envío dentro del conurbano - AR$ 1.000</option>
-                            <option value="Bs As">Envío dentro de la provincia de Buenos Aires -  AR$ 1.500</option>
-                            <option value="interior">Envío al interior - AR$ 2.000</option>
-                        </select>
-                    </form>
+                <h2 class="productDetailTitle">Harry Potter y la Piedra Filosofal</h2>
+                <h3 class="productDetailAuthor">J.K. Rowling</h3>
+                <div class="productDetailQuantity">
+                    <h4 class="productDetailPrice"><span>AR$</span><span>10.000</span></h4>
+                    <div class="selectQuantity">
+                        <div class="selectQuantityWarning">
+                            <span>Quedan</span><span>#</span><span>disponibles</span>
+                        </div>
+                        <div class="selectQuantitybtns">
+                            <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="priceTotal">
-                    <div>Total</div>
-                    <div><span>AR$</span><span class="priceNumber">30.000 + envío</span></div>
-                </div>
-                <button class="checkout" type="submit" form="shippingForm">Finalizar compra</button>
+                <a class="productDetailAddCart" href="./shoppingCart.html">Agregar al carrito</a>
             </article>
+        </section>
+        <section class="productDetailDesc">
+            <div class="sinopsis">
+                <h4>Sinópsis</h4>
+                <div>Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y hará un puñado de buenos amigos… aunque también algunos temibles enemigos. Pero, sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago!</div>
+            </div>
+            <div class="desc">
+                <h4>Especificaciones</h4>
+                <div>
+                    <ul>
+                        <li><span>Peso:</span><span>220 g</span></li>
+                        <li><span>Idioma:</span><span>Español</span></li>
+                        <li><span>Editorial:</span><span class="editorial">SALAMANDRA</span></li>
+                        <li><span>Fecha de publicación:</span><span>26/07/1997</span></li>
+                        <li><span>Dimensiones:</span><span>12.00cm X 20.00cm X 2.50cm</span></li>
+                        <li><span>Número de páginas:</span><span>288</span></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="mightLike">
             <h2>Te podría interesar</h2>
@@ -274,6 +231,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
     <script src="../public/js/header.js"></script>
-    <script src="../public/js/shoppingCart.js"></script>
+    <script src="../public/js/productDetail.js"></script>
 </body>
 </html>
