@@ -1,0 +1,468 @@
+@import "variables.css";
+
+main {
+    margin: 0;
+    font-family: var(--font--family);
+}
+
+span, div {
+    cursor: default;
+}
+
+
+/* Product detail */
+.productDetail {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 40px auto;
+    gap: 80px;
+    justify-content: center;
+}
+
+.productDetailImg {
+    width: 40%;
+}
+
+.productDetailImg img {
+    width: 100%;
+}
+
+.productDetailBody {
+    width: 40%;
+    padding: 20px 30px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: var(--slate--gray);
+    cursor: default;
+    transition: all 0.2s ease-in-out;
+}
+
+.breadcrumbs span:nth-child(odd) {
+    cursor: pointer;
+}
+
+.breadcrumbs span:nth-child(odd):hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.productDetailTitle {
+    cursor: default;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--jasper);
+}
+
+.productDetailAuthor {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--coral);
+    transition: all 0.3s ease-in-out;
+}
+
+.productDetailAuthor:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.productDetailQuantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 80px 0 10px 0;
+}
+
+.productDetailPrice {
+    font-size: 1rem;
+    color: var(--night);
+    display: flex;
+    gap: 3px;
+}
+
+.selectQuantity {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectQuantityWarning {
+    background-color: var(--jasper);
+    color: var(--eggplant);
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+.selectQuantityWarning span {
+    padding-left: 3px;
+}
+
+.selectQuantitybtns {
+    width: 100px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 1px var(--jasper);
+    border-radius: 5px;
+}
+
+.selectQuantitybtn {
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.selectQuantitybtn:hover {
+    color: var(--coral);
+    opacity: 0.8;
+}
+
+.selectQuantityNumber {
+    font-size: 0.9rem;
+}
+
+.productDetailAddCart {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: var(--eggplant);
+    width: 50%;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.productDetailAddCart:hover {
+    background-color: transparent;
+    color: var(--eggplant);
+    border: solid 1px var(--eggplant);
+}
+/* Product detail end */
+
+/* Product detail desc */
+.productDetailDesc {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.sinopsis {
+    display: flex;
+}
+
+.desc {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sinopsis h4, .desc h4 {
+    width: 20%;
+    margin: 0;
+    color: var(--jasper);
+}
+
+.sinopsis div, .desc div {
+    width: 80%;
+    font-size: 0.9rem;
+    display: flex;
+}
+
+.desc div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desc div ul li {
+    width: 150%;
+    padding: 10px 0;
+    border-bottom: solid 1px var(--slate--gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.editorial {
+    color: var(--coral);
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* Product detail desc end */
+
+/* Might like  */
+.mightLike {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.mightLike h2 {
+    cursor: default;
+    margin: 0;
+    padding: 40px 0;
+    font-size: 1.5rem;
+    text-align: start;
+    color: var(--coral);
+}
+
+.carrouselMightLike {
+    display: flex;
+    justify-content: center;
+}
+/* Might like end */
+
+/* Card */
+.card {
+    width: 150px;
+    height: auto;
+}
+
+.imgContainer {
+    position: relative;
+    max-width: 150px;
+    margin: auto;
+}
+
+.cardImg {
+    display: block;
+    width: 150px;
+    height: auto;
+    
+}
+
+.cardImg img {
+    max-width: 150px;
+    height: auto;
+}
+
+.addCart {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    z-index: 15;
+    background-color: var(--eggplant);
+    color: whitesmoke;
+    padding: 7px;
+    width: 20px;
+    height: 20px;
+    font-size: smaller;
+    border-radius: 30px;
+    visibility: hidden;
+    opacity: 0;
+    border-width: 0px;
+    transition: all 0.3s 0.5s ease-in-out;
+}
+
+.card:hover .addCart{
+    transform: translateY(-40px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.addCart:active {
+    transition: 0s 0s linear;
+    background-color: transparent;
+    border: solid whitesmoke 1.5px;
+}
+
+.cardBody {
+    font-size: 0.7rem;
+    margin: auto;
+    max-width: 150px;
+}
+
+.title, .author {
+    display: block;
+    margin: 0px !important;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--coral);
+    transition: all 0.3s ease-in-out;
+}
+
+.title:hover, .author:hover {
+    opacity: 0.5;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.author {
+    font-weight: 500;
+}
+
+.cardBody a h3 {
+    margin: 0;
+    font-weight: inherit;
+}
+
+.price {
+    font-weight: 500;
+    margin: 0%;
+    padding: 10px 0;
+}
+
+.price span {
+    padding-left: 3px;
+}
+
+.ranking {
+    margin:5px 2px 0 2px;
+    padding: 2px;
+    background-color: var(--eggplant);
+    border-radius: 30px;
+}
+
+.ranking .rankingNumber {
+    padding-right: 2px;
+}
+/* Card end */
+
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+    /* Cards */
+    .addCart {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        visibility: visible;
+        transition: none;
+        opacity: 1;
+    }
+
+    .card:hover .addCart{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Product detail */
+    .productDetail {
+        flex-direction: column;
+        width: 100%;
+        margin: 40px 0;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .productDetailImg {
+        width: 100%;
+    }
+    
+    .productDetailImg img {
+        width: 100%;
+    }
+    
+    .productDetailBody {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .productDetailQuantity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 80px 0 10px 0;
+    }
+
+    .productDetailTitle {
+       padding-left: 10px;
+    }
+    
+    .productDetailAuthor {
+        padding-left: 10px;
+    }
+
+    .productDetailAddCart {
+        font-size: 1.2rem;
+    }
+
+    /* Product detail desc */
+    .productDetailDesc {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .sinopsis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sinopsis h4, .desc h4 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        color: var(--jasper);
+    }
+
+    .sinopsis div, .desc div {
+        width: 90%;
+        font-size: 0.9rem;
+        display: flex;
+    }
+
+    .desc div ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .desc div ul li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: solid 1px var(--slate--gray);
+        display: flex;
+        justify-content: space-between;
+        text-align: end;
+    }
+
+    /* Might Like */
+    .mightLike {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mightLike h2 {
+        padding: 20px 30px;
+    }
+    
+    /* Cards */
+    .addCart {
+        right: 15px;
+        top: 10px;
+        visibility: visible;
+        transition: none;
+        opacity: 1;
+    }
+
+    .card:hover .addCart{
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+}

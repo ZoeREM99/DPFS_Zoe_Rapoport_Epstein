@@ -462,7 +462,7 @@ main {
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
     .signUp {
         width: 90%;
-        margin: auto;
+        margin: 40px auto;
     }
 
     .signUpImg {
