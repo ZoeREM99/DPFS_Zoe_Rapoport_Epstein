@@ -9,5 +9,3 @@
 ### Hamburger menu 
 
 [Hamburger menu](https://codepen.io/RubenVP/pen/pZOojm)
-
-j
