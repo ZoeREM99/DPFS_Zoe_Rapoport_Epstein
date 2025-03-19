@@ -1,60 +1,8 @@
 <!DOCTYPE html>
 <html lang="esp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librería Palas - Home</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script src="https://kit.fontawesome.com/073e576f16.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/css/shoppingCart.css">
-    <link rel="stylesheet" href="../public/css/header.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
-    <link rel="shortcut icon" href="../public/img/logos/LP.png" type="jpg">
-</head>
+<%- include('../partials/head.ejs', {stylesheet: 'shoppingCart', title: 'Carrito de Compras'}) %>
 <body>
-    <header>
-        <section id="headerTop">
-            <div class="hamburger">
-                <div class="_layer -top"></div>
-                <div class="_layer -mid"></div>
-                <div class="_layer -bottom"></div>
-            </div>
-            <a class="logoNav" href="/index.html"><img src="../public/img/logos/LibreriaPalas.png" alt="Librería Palas logo"></a>
-            <div id="headerSearchBar">
-                <form id="searchbar" onsubmit="event.preventDefault();" role="search">
-                    <label id="searchlabel" for="search">Search for stuff</label>
-                    <input id="search" type="search" placeholder="Buscar..."/>
-                    <button id="searchbtn" type="submit">Buscar</button>    
-                </form>
-            </div>
-            <div id="navbtnsDesktop">
-                <button type="button" class="headerbtn signUpbtn" onclick="location.href='./logIn.html'">
-                    <i class="fa-solid fa-circle-user"></i>Log In
-                </button>
-                <button type="button" class="headerbtn shoppingbtn" onclick="location.href='./shoppingCart.html'">
-                    <i class="fa-solid fa-cart-shopping"></i>Ver carrito
-                </button>
-            </div>
-            <div id="navbtns">
-                <button type="button" class="headerbtn signUpbtn" onclick="location.href='./logIn.html'">
-                    <i class="fa-solid fa-circle-user"></i>
-                </button>
-                <button type="button" class="headerbtn shoppingbtn" onclick="location.href='./shoppingCart.html'">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-            </div>
-        </section>
-        <section id="headerBottom">
-            <nav class="menuppal">
-                <ul>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Sucursales</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>   
-            </nav>
-        </section>
-    </header>
+    <%- include('../partials/header.ejs') %>
     <main>
         <section class="shoppingCart">
             <article class="products">
@@ -63,8 +11,8 @@
                     <div class="productAmount"><span>3</span><span>productos</span></div>
                 </div>
                 <div class="product">
-                    <a href="./productDetail1.html"><img class="productImg" src="../public/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal"></a>
-                    <a href="./productDetail1.html" class="productName">Harry Potter y la Piedra Filosofal</a>
+                    <a href="./id/1"><img class="productImg" src="/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal"></a>
+                    <a href="./id/1" class="productName">Harry Potter y la Piedra Filosofal</a>
                     <div class="selectQuantity">
                         <div class="selectQuantityWarning">
                             <span>Quedan</span><span>#</span><span>disponibles</span>
@@ -81,8 +29,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <a href="./productDetail2.html"><img class="productImg" src="../public/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta"></a>
-                    <a href="./productDetail2.html" class="productName">Harry Potter y la Cámara Secreta</a>
+                    <a href="./id/2"><img class="productImg" src="/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta"></a>
+                    <a href="./id/2" class="productName">Harry Potter y la Cámara Secreta</a>
                     <div class="selectQuantity">
                         <div class="selectQuantityWarning">
                             <span>Quedan</span><span>#</span><span>disponibles</span>
@@ -99,8 +47,8 @@
                     </div>
                 </div>
                 <div class="product">
-                    <a href="./productDetail3.html"><img class="productImg" src="../public/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban"></a>
-                    <a href="./productDetail3.html" class="productName">Harry Potter y el Prisionero de Azkaban</a>
+                    <a href="./id/3"><img class="productImg" src="/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban"></a>
+                    <a href="./id/3" class="productName">Harry Potter y el Prisionero de Azkaban</a>
                     <div class="selectQuantity">
                         <div class="selectQuantityWarning">
                             <span>Quedan</span><span>#</span><span>disponibles</span>
@@ -147,91 +95,91 @@
             <article class="carrouselMightLike">
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail1.html">
-                            <img src="../public/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal">
+                        <a class="cardImg" href="./id/1">
+                            <img src="/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail1.html" class="title"><h3>Harry Potter y la Piedra Filosofal</h3></a>
+                        <a href="./id/1" class="title"><h3>Harry Potter y la Piedra Filosofal</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail2.html">
-                            <img src="../public/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta">
+                        <a class="cardImg" href="./id/2">
+                            <img src="/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail2.html" class="title"><h3>Harry Potter y la Cámara Secreta</h3></a>
+                        <a href="./id/2" class="title"><h3>Harry Potter y la Cámara Secreta</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail3.html">
-                            <img src="../public/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban">
+                        <a class="cardImg" href="./id/3">
+                            <img src="/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail3.html" class="title"><h3>Harry Potter y el Prisionero de Azkaban</h3></a>
+                        <a href="./id/3" class="title"><h3>Harry Potter y el Prisionero de Azkaban</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail4.html">
-                            <img src="../public/img/portadas/calizFuego.jpg" alt="Harry Potter y el caliz de fuego">
+                        <a class="cardImg" href="./id/4">
+                            <img src="/img/portadas/calizFuego.jpg" alt="Harry Potter y el caliz de fuego">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail4.html" class="title"><h3>Harry Potter y el Cáliz de Fuego</h3></a>
+                        <a href="./id/4" class="title"><h3>Harry Potter y el Cáliz de Fuego</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail5.html">
-                            <img src="../public/img/portadas/ordenFenix.jpg" alt="Harry Potter y la orden del fenix">
+                        <a class="cardImg" href="./id/5">
+                            <img src="/img/portadas/ordenFenix.jpg" alt="Harry Potter y la orden del fenix">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail5.html" class="title"><h3>Harry Potter y la Orden del Fénix</h3></a>
+                        <a href="./id/5" class="title"><h3>Harry Potter y la Orden del Fénix</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail6.html">
-                            <img src="../public/img/portadas/misterioPrincipe.webp" alt="Harry Potter y el misterio del principe">
+                        <a class="cardImg" href="./id/6">
+                            <img src="/img/portadas/misterioPrincipe.webp" alt="Harry Potter y el misterio del principe">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail6.html" class="title"><h3>Harry Potter y el Misterio del Príncipe</h3></a>
+                        <a href="./id/6" class="title"><h3>Harry Potter y el Misterio del Príncipe</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgContainer">
-                        <a class="cardImg" href="./productDetail7.html">
-                            <img src="../public/img/portadas/reliquiasMuerte.webp" alt="Harry Potter y las reliquias de la muerte">
+                        <a class="cardImg" href="./id/7">
+                            <img src="/img/portadas/reliquiasMuerte.webp" alt="Harry Potter y las reliquias de la muerte">
                         </a>
                         <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="cardBody">
-                        <a href="./productDetail7.html" class="title"><h3>Harry Potter y las Reliquias de la Muerte</h3></a>
+                        <a href="./id/7" class="title"><h3>Harry Potter y las Reliquias de la Muerte</h3></a>
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
@@ -239,41 +187,11 @@
             </article>
         </section>
     </main>
-    <footer>
-        <section class="footerLogo">
-            <img src="../public/img/logos/libreriaPalasRedondo.png" alt="Librería Palas logo">
-        </section>
-        <section class="footerText">
-            <article class="data">
-                <h3>Información de la tienda</h3>
-                <ul>
-                    <li>Locales</li>
-                    <li>Franquicias</li>
-                    <li>Políticas de privacidad</li>
-                </ul>
-            </article>
-            <article class="contact">
-                <h3>Contactanos</h3>
-                <ul>
-                    <li>Trabajar con nosotros</li>
-                    <li>Envíanos un mensaje</li>
-                </ul>
-            </article>
-            <article class="socialLinks">
-                <h3>Redes sociales</h3>
-                <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                </ul>
-            </article>
-        </section>
-    </footer>
+    <%- include('../partials/footer.ejs') %>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
-    <script src="../public/js/header.js"></script>
-    <script src="../public/js/shoppingCart.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/shoppingCart.js"></script>
 </body>
 </html>

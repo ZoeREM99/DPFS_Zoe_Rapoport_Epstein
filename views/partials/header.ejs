@@ -1,0 +1,42 @@
+<header>
+        <section id="headerTop">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <a class="logoNav" href="/"><img src="/img/logos/LibreriaPalas.png" alt="Librería Palas logo"></a>
+            <div id="headerSearchBar">
+                <form id="searchbar" onsubmit="event.preventDefault();" role="search">
+                    <label id="searchlabel" for="search">Search for stuff</label>
+                    <input id="search" type="search" placeholder="Buscar..."/>
+                    <button id="searchbtn" type="submit">Buscar</button>    
+                </form>
+            </div>
+            <div id="navbtnsDesktop">
+                <button type="button" class="headerbtn signUpbtn" onclick="location.href='/users/logIn'">
+                    <i class="fa-solid fa-circle-user"></i>Log In
+                </button>
+                <button type="button" class="headerbtn shoppingbtn" onclick="location.href='/products/shoppingCart'">
+                    <i class="fa-solid fa-cart-shopping"></i>Ver carrito
+                </button>
+            </div>
+            <div id="navbtns">
+                <button type="button" class="headerbtn signUpbtn" onclick="location.href='/users/logIn'">
+                    <i class="fa-solid fa-circle-user"></i>
+                </button>
+                <button type="button" class="headerbtn shoppingbtn" onclick="location.href='/products/shoppingCart'">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </section>
+        <section id="headerBottom">
+            <nav class="menuppal">
+                <ul>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>   
+            </nav>
+        </section>
+    </header>
