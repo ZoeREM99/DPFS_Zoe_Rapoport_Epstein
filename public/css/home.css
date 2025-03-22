@@ -692,6 +692,13 @@ h4 {
         color: var(--night);
     }
 
+    .category1 .textContainer h4 {
+        font-size: .8rem;
+    }
+
+    .category3 .textContainer h4 {
+        font-size: .8rem;
+    }
     
     .category1 .carrouselCategories {
         background-color: transparent;

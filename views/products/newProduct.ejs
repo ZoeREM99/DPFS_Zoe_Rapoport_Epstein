@@ -4,8 +4,104 @@
 <body>
     <%- include('../partials/header.ejs') %>
     <main>
-        
+        <h1>Creación de artículos</h1>
+        <form class="createForm">
+            <section class="create">
+                <article class="leftColumn">
+                    <div class="productDiv" id="name">
+                        <label for="productName">Nombre del artículo</label>
+                        <input type="text" name="productName" id="productName" placeholder="Ingresar nombre del libro" required>
+                    </div>
+                    <div class="productDiv" id="author">
+                        <label for="productAuthor">Autor</label>
+                        <input type="text" name="productAuthor" id="productAuthor" placeholder="Ingresar autor del libro" required>
+                    </div>
+                    <div class="productDiv" id="image">
+                        <p class="productImageLabel">Portada</p>
+                        <p id="productImageName"></p>
+                        <label for="productImage">Selecciona un archivo</label>
+                        <input type="file" name="productImage" id="productImage" accept="image/*" required>
+                    </div>
+                    <div class="productDiv" id="genre">
+                        <label for="productGenre">Género</label>
+                        <select name="productGenre" id="productGenre" required>
+                            <option value="">Selecciona un género</option>
+                            <option value="literature">Literatura</option>
+                            <option value="noFiction">No ficción</option>
+                            <option value="educative">Libros de texto y Educativos</option>
+                            <option value="artPhotography">Arte y Fotografía</option>
+                            <option value="comics">Cómics y Novelas gráficas</option>
+                            <option value="travel">Libros de viaje</option>
+                            <option value="stationary">Papelería y Artículos de escritorio</option>
+                            <option value="gift">Regalos</option>
+                        </select>
+                    </div>
+                    <div class="productDiv" id="subGenre">
+                        <label for="productSubGenre">Sub-género</label>
+                        <select name="productSubGenre" id="productSubGenre" required>
+                            <option value="">Selecciona un sub-género</option>
+                        </select>
+                    </div>
+                    <div class="productDiv" id="desc">
+                        <label for="productDesc">Descripción</label>
+                        <textarea name="productDesc" id="productDesc" cols="30" rows="5" placeholder="..." required></textarea>
+                    </div>
+                    <div class="productDiv" id="language">
+                        <label for="productLanguage">Idioma</label>
+                        <select name="productLanguage" id="productLanguage" required>
+                            <option value="">Selecciona un idioma</option>
+                            <option value="spanish">Español</option>
+                            <option value="english">Inglés</option>
+                        </select>
+                    </div>
+                </article>
+                <article class="rigthColumn">
+                    <div class="productDiv" id="editorial">
+                        <label for="productEditorial">Editorial</label>
+                        <select name="productEditorial" id="productEditorial" required>
+                            <option value="">Selecciona una editorial</option>
+                            <option value="Salamandra">Salamandra</option>
+                        </select>
+                    </div>
+                    <div class="productDiv" id="date">
+                        <label for="productDate">Fecha de publicación</label>
+                        <input type="date" name="productDate" id="productDate" required>
+                    </div>
+                    <div class="productDiv" id="weigth">
+                        <label for="productWeigth">Peso del libro</label>
+                        <input type="number" min="0" placeholder="0" name="productWeigth" id="productWeigth" required>
+                    </div>
+                    <div class="productDiv" id="width">
+                        <label for="productWidth">Ancho del libro</label>
+                        <input type="number" min="0" placeholder="0" name="productWidth" id="productWidth" required>
+                    </div>
+                    <div class="productDiv" id="length">
+                        <label for="productLength">Largo del libro</label>
+                        <input type="number" min="0" placeholder="0" name="productLength" id="productLength" required>
+                    </div>
+                    <div class="productDiv" id="depth">
+                        <label for="productDepth">Profundidad del libro</label>
+                        <input type="number" min="0" placeholder="0" name="productDepth" id="productDepth" required>
+                    </div>
+                    <div class="productDiv" id="pages">
+                        <label for="productPages">Número de páginas</label>
+                        <input type="number" min="0" placeholder="0" name="productPages" id="productPages" required>
+                    </div>
+                    <div class="productDiv" id="stock">
+                        <label for="productStock">Cantidad de ejemplares</label>
+                        <input type="number" name="productStock" id="productStock" placeholder="1" min="1" required>
+                    </div>
+                    <div class="productDiv" id="price">
+                        <label for="productPrice">Precio del ejemplar</label>
+                        <input type="number" name="productPrice" id="productPrice" placeholder="1" min="1" required>
+                    </div>
+                </article>
+            </section>
+            <button type="submit">Enviar</button>
+        </form> 
     </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="/js/header.js"></script>
+    <script src="/js/newProduct.js"></script>
 </body>
 </html>
