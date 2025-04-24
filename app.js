@@ -2,10 +2,13 @@
 var express = require('express');
 var path = require('path');
 
+// Importar routers
 var homeRouter = require('./routes/home');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
-var middlewareErrors = require('./middlewares/middlewareErrors')
+
+// Importar middlewares
+
 
 // Inicializar la aplicación Express
 var app = express();
@@ -22,7 +25,7 @@ app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 
 // Middlewares
-app.use(middlewareErrors.manejarErrorVista);
+
 
 // Definir el puerto para el servidor
 var PORT = 3000;

@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 let productsController = require('../controllers/productsController');
+// let {uploadProduct} = require('../middlewares/multerMiddleware');
 
 //Routes
 router.get('/', productsController.list);

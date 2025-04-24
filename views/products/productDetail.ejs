@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="esp">
-<%- include('../partials/head.ejs', {stylesheet: 'productDetail', title: 'Producto 3'}) %>
+<%- include('../partials/head.ejs') %>
 <body>
     <%- include('../partials/header.ejs') %>
     <main>
-        <section class="productDetail">
+        <% if (bookFound == true) { %>
+            <section class="productDetail">
             <article class="productDetailImg">
-                <img src="/img/portadas/prisioneroAzkaban.jpeg" alt="Harry Potter y el prisionero de Azkaban">
+                <img src="<%= book.image %>" alt="<%= book.title %>">
             </article>
             <article class="productDetailBody">
                 <div class="breadcrumbs">
-                    <span>Literatura</span><span>/</span><span>Infantil y Juvenil</span>
+                    <span><%= book.genre %></span><span>/</span><span><%= book.subgenre %></span>
                 </div>
-                <h2 class="productDetailTitle">Harry Potter y el Prisionero de Azkaban</h2>
-                <h3 class="productDetailAuthor">J.K. Rowling</h3>
+                <h2 class="productDetailTitle"><%= book.title %></h2>
+                <h3 class="productDetailAuthor"><%= book.author %></h3>
                 <div class="productDetailQuantity">
-                    <h4 class="productDetailPrice"><span>AR$</span><span>10.000</span></h4>
+                    <h4 class="productDetailPrice"><span>AR$</span><span><%= book.price %></span></h4>
                     <div class="selectQuantity">
                         <div class="selectQuantityWarning">
-                            <span>Quedan</span><span>#</span><span>disponibles</span>
+                            <span><% if (book.stock == 1) { %>
+                            Queda
+                            <% } else { %>
+                            Quedan
+                            <% } %>
+                            </span><span><%= book.stock %></span><span><% if (book.stock == 1) { %>
+                            disponible
+                            <% } else { %>
+                            disponibles
+                            <% } %></span>
                         </div>
                         <div class="selectQuantitybtns">
                             <div class="selectQuantitybtn"><i class="fa-solid fa-minus"></i></div><span class="selectQuantityNumber">1</span><div class="selectQuantitybtn"><i class="fa-solid fa-plus"></i></div>
@@ -27,43 +37,45 @@
                 </div>
                 <a class="productDetailAddCart" href="../shoppingCart">Agregar al carrito</a>
             </article>
-        </section>
-        <section class="productDetailDesc">
+            </section>
+            <section class="productDetailDesc">
             <div class="sinopsis">
                 <h4>Sinópsis</h4>
-                <div>Por la cicatriz que lleva en la frente, sabemos que Harry Potter no es un niño como los demás, sino el héroe que venció a lord Voldemort, culpable de la muerte de sus padres. Desde entonces, Harry no tiene más remedio que vivir con sus pesados tíos y su insoportable primo Dudley, todos ellos muggles, o sea, personas no magas. Igual que en las dos primera partes de la serie -La piedra filosofal y La cámara secreta- Harry aguarda con impaciencia el inicio del tercer curso en el Colegio Hogwarts de Magia y Hechicería. Tras haber cumplido los trece años, solo y lejos de sus amigos de Hogwarts, Harry se pelea con su bigotuda tía Marge, a la que convierte en globo, y debe huir en un autobús mágico. Mientras tanto, de la prisión de Azkaban se ha escapado un terrible villano, Sirius Black, un asesino en serie con poderes mágicos que fue cómplice de lord Voldemort y que parece dispuesto a eliminar a Harry del mapa. Y por si esto fuera poco, Harry deberá enfrentarse también a unos terribles monstruos, los dementores, seres abominables capaces de robarles la felicidad a los magos y de borrar todo recuerdo hermoso de aquellos que osan mirarlos. Lo que ninguno de estos malvados personajes sabe es que Harry, con la ayuda de sus fieles amigos Ron y Hermione, es capaz de todo y mucho más.</div>
+                <div><%= book.desc %></div>
             </div>
             <div class="desc">
                 <h4>Especificaciones</h4>
                 <div>
                     <ul>
-                        <li><span>Peso:</span><span>436 g</span></li>
-                        <li><span>Idioma:</span><span>Español</span></li>
-                        <li><span>Editorial:</span><span class="editorial">SALAMANDRA</span></li>
-                        <li><span>Fecha de publicación:</span><span>08/07/1999</span></li>
-                        <li><span>Dimensiones:</span><span>15.00cm X 23.00cm X 3.80cm</span></li>
-                        <li><span>Número de páginas:</span><span>384</span></li>
+                        <li><span>Peso:</span><span><%= book.especs.weight%> g</span></li>
+                        <li><span>Idioma:</span><span><%= book.especs.language%></span></li>
+                        <li><span>Editorial:</span><span class="editorial"><%= book.especs.editorial.toUpperCase()%></span></li>
+                        <li><span>Fecha de publicación:</span><span><%= book.especs.date%></span></li>
+                        <li><span>Dimensiones:</span><span><%= book.especs.width%>cm X <%= book.especs.height%>cm X <%= book.especs.depth%>cm</span></li>
+                        <li><span>Número de páginas:</span><span><%= book.especs.pages%></span></li>
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="mightLike">
+            </section>
+            <section class="mightLike">
             <h2>Te podría interesar</h2>
             <article class="carrouselMightLike">
-                <div class="card">
-                    <div class="imgContainer">
-                        <a class="cardImg" href="./1">
-                            <img src="/img/portadas/piedraFilo.webp" alt="Harry Potter y la piedra filosofal">
-                        </a>
-                        <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                <% mightLike.forEach(element => { %>
+                    <div class="card">
+                        <div class="imgContainer">
+                            <a class="cardImg" href="./<%= element.id %>">
+                                <img src="<%= element.image%>" alt="<%= element.title %>">
+                            </a>
+                            <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                        <div class="cardBody">
+                            <a href="./<%= element.id%>" class="title"><h3><%= element.title%></h3></a>
+                            <a href="#" class="author"><h3><%= element.author%></h3></a>
+                            <h4 class="price"><span>AR$</span><span><%= element.price%></span></h4>
+                        </div>
                     </div>
-                    <div class="cardBody">
-                        <a href="./1" class="title"><h3>Harry Potter y la Piedra Filosofal</h3></a>
-                        <a href="#" class="author"><h3>J.K. Rowling</h3></a>
-                        <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
-                    </div>
-                </div>
-                <div class="card">
+                <% }) %>
+                <!-- <div class="card">
                     <div class="imgContainer">
                         <a class="cardImg" href="./2">
                             <img src="/img/portadas/camaraSecreta.jpeg" alt="Harry Potter y la camara secreta">
@@ -140,9 +152,13 @@
                         <a href="#" class="author"><h3>J.K. Rowling</h3></a>
                         <h4 class="price"><span>AR$</span><span>10.000,00</span></h4>
                     </div>
-                </div>
+                </div> -->
             </article>
-        </section>
+            </section>
+        <% } else { %>
+            <div id="not-found">El libro que buscás no existe</div>
+        <% }%>
+        
     </main>
     <%- include('../partials/footer.ejs') %>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

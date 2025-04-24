@@ -9,6 +9,16 @@ span, div {
     cursor: default;
 }
 
+/* Not found */
+#not-found {
+    width: 90%;
+    text-align: center;
+    margin: 70px auto;
+    margin-bottom: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--slate--gray);
+}
 
 /* Product detail */
 .productDetail {
